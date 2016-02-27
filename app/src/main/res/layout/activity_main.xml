@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pandroid.androidsupportlibrary232.MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vector Drawable Compat"
+        android:id="@+id/Vector_Drawable_Compat"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AppCompat DayNight theme "
+        android:id="@+id/AppCompat_DayNight_theme"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design Support Library: Bottom Sheets"
+        android:id="@+id/Bottom_Sheets"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MediaBrowserServiceCompat"
+        android:id="@+id/MediaBrowserServiceCompat"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Tabs"
+        android:id="@+id/Custom_Tabs"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
