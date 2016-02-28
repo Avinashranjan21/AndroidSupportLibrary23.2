@@ -1,5 +1,6 @@
 package com.pandroid.androidsupportlibrary232;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.Vector_Drawable_Compat:
+                startActivity(new Intent(MainActivity.this,Vector_Drawable_Compat_Activity.class));
                 break;
             case R.id.AppCompat_DayNight_theme:
                 break;
