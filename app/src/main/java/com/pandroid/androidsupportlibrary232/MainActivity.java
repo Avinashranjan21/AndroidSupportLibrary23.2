@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.AppCompat_DayNight_theme:
                 break;
             case R.id.Bottom_Sheets:
+                startActivity(new Intent(MainActivity.this,Bottom_Sheets_Activity.class));
                 break;
             case R.id.MediaBrowserServiceCompat:
                 break;

@@ -1,0 +1,59 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+       <Button
+           android:id="@+id/bt_bottomSheet"
+           android:text="Bottom Sheets"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <Button
+            android:id="@+id/bt_whatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="WhatsApp" />
+
+        <Button
+            android:id="@+id/bt_messenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Messenger" />
+
+        <Button
+            android:id="@+id/bt_Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Facebook" />
+
+        <Button
+            android:id="@+id/bt_LinkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Linked In" />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
