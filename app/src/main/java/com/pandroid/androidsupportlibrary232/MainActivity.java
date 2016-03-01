@@ -1,6 +1,9 @@
 package com.pandroid.androidsupportlibrary232;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,20 +31,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    private void chromeCustomTab() {
+        CustomTabsIntent mIntent = new CustomTabsIntent.Builder().build();
+        String url = "http://www.Google.co.in";
+        mIntent.launchUrl(this, Uri.parse(url));
+    }
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.Vector_Drawable_Compat:
-                startActivity(new Intent(MainActivity.this,Vector_Drawable_Compat_Activity.class));
+                startActivity(new Intent(MainActivity.this, Vector_Drawable_Compat_Activity.class));
                 break;
             case R.id.AppCompat_DayNight_theme:
                 break;
             case R.id.Bottom_Sheets:
-                startActivity(new Intent(MainActivity.this,Bottom_Sheets_Activity.class));
+                startActivity(new Intent(MainActivity.this, Bottom_Sheets_Activity.class));
                 break;
             case R.id.MediaBrowserServiceCompat:
                 break;
             case R.id.Custom_Tabs:
+                chromeCustomTab();
                 break;
         }
 
